@@ -1,0 +1,125 @@
+.tracking-page h1 {
+  color: #2d3748;
+  margin-bottom: 2rem;
+}
+
+.tracking-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.bus-list {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.bus-list h2 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.bus-card {
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bus-card:hover {
+  border-color: #667eea;
+  background: #f7fafc;
+}
+
+.bus-card.active {
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.bus-number {
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.bus-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.bus-info div {
+  margin: 0.3rem 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-idle {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status-in_transit {
+  background: #bee3f8;
+  color: #2c5282;
+}
+
+.status-maintenance {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.bus-details {
+  min-height: 500px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.detail-grid div {
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 4px;
+}
+
+.detail-grid strong {
+  color: #667eea;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.map-placeholder {
+  background: #f0f4ff;
+  border: 2px dashed #667eea;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #667eea;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tracking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .bus-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
